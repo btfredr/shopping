@@ -1,4 +1,5 @@
-
+import Product from '../components/Product';
+import {PRODUCTS} from '../products'
 
 const Home = () => {
   return (
@@ -7,7 +8,9 @@ const Home = () => {
             <h1>Web Shop</h1>
         </div>
         <div className="home__products">
-            
+            {PRODUCTS.map((product) => (
+              <Product />
+            ))}
         </div>
     </div>
   )
