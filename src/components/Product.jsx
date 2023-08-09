@@ -1,8 +1,14 @@
-
-
-const Product = () => {
+const Product = ({id, productName, price, productImage}) => {
   return (
-    <div>Product</div>
+    <div className="product">
+        <img className="product__img" src={productImage} alt={productName} />
+        <div className="product__description">
+            <p>
+                <b>{productName}</b>
+            </p>
+            <p>{price}</p>
+        </div>
+    </div>
   )
 }
 
