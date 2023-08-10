@@ -3,3 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.home {
+
+    &__title {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &__products {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+}
