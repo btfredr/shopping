@@ -1,6 +1,7 @@
 import { PRODUCTS } from "../products";
 import { ShopContext } from "../context/ShopContextProvider"
 import { useContext } from "react";
+import CartItem from "../components/CartItem";
 
 const Cart = () => {
   const {cartItems} = useContext(ShopContext);
@@ -13,7 +14,9 @@ const Cart = () => {
       <div className="cart__items">
         {PRODUCTS.map((product) => {
           if(cartItems[product.id] !== 0) {
-            return <CartItem />
+            return (
+              <CartItem key={product.id} id={product.id} productName={product.productName} price={product.price} productImage={product.productImage}/>
+            )
           }
         })}
       </div>
