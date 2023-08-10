@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
 }
 
 .cartItem {
     width: 700px;
     height: 250px;
     display: flex;
-  
     align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
@@ -17,21 +17,29 @@
 
     &__img {
         width: 200px;
+        margin-right: 20px;
       }
       
       &___description {
         width: 100%;
         font-size: 30px;
       }
-  }
-  
 
-  
-  .countHandler input {
-    width: 40px;
-    text-align: center;
-    font-weight: bolder;
+    &__countHandler {
+        margin-top: 10px;
+    }
+    &__countHandler input, button {
+        width: 40px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 18px;
+      }
+
+    &__countHandler button:hover {
+        cursor: pointer;
+      }
   }
+  
   
   .checkout button {
     width: 150px;

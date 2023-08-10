@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="home">
         <div className="home__title">
-            <h1>Web Shop</h1>
+            <h1>Fredrik's Tech Store</h1>
         </div>
         <div className="home__products">
             {PRODUCTS.map((product) => (
