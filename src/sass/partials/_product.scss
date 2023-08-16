@@ -9,12 +9,17 @@
     align-items: center;
 
     &__img {
-        width: 400px;
+        width: 100%;
         margin-bottom: auto;
+    }
+
+    &__title {
+        margin-top: 25%;
     }
 
     &__description {
         text-align: center;
+        margin-bottom: 15px;
     }
 
     &:hover {

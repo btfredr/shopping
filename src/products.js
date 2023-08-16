@@ -5,7 +5,6 @@ import product4 from "./assets/4.png";
 import product5 from "./assets/5.png";
 import product6 from "./assets/6.webp";
 import product7 from "./assets/7.webp";
-import product8 from "./assets/8.webp";
 
 export const PRODUCTS = [
   {
@@ -49,11 +48,5 @@ export const PRODUCTS = [
     productName: "AUTO SERVICE SHIRT",
     price: 120.0,
     productImage: product7,
-  },
-  {
-    id: 8,
-    productName: "DON'T TRIP UNSTRUCTURED HAT",
-    price: 40.0,
-    productImage: product8,
   },
 ];

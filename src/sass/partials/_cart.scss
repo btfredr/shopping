@@ -3,7 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+
 
      &__checkout button {
         width: 150px;
@@ -14,12 +19,31 @@
         border-radius: 8px;
         margin: 10px;
         cursor: pointer;
-        margin-top: 25px;
+        margin-top: 50px;
+      }
+
+      &__items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+
+      &__subtotal {
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding: 5%;
       }
 }
 
 .cartItem {
-    width: 700px;
+    width: 100%;
+    padding: 7%;
     height: 250px;
     display: flex;
     align-items: center;
@@ -50,6 +74,12 @@
 
     &__countHandler button:hover {
         cursor: pointer;
+      }
+
+      @media screen and (max-width: 1200px) {
+        &__img {
+            width: 25%;
+        }
       }
   }
   

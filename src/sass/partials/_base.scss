@@ -9,15 +9,38 @@
     &__title {
         margin-top: 100px;
         text-align: center;
-        font-size: 40px;
+    }
+
+    &__title h1 {
+        font-size: 300%;
+    }
+
+    &__productContainer {
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     &__products {
-        width: 100%;
-        height: auto;
+        max-width: 1200px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        place-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__products {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
